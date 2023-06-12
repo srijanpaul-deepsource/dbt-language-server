@@ -1,0 +1,9 @@
+version = 1
+
+test_patterns = ["e2e/**"]
+
+[[analyzers]]
+name = "javascript"
+
+  [analyzers.meta]
+  environment = ["mocha"]
