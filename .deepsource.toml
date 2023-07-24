@@ -1,9 +1,13 @@
 version = 1
 
-test_patterns = ["e2e/**"]
+[[analyzers]]
+name = "shell"
+
+[[analyzers]]
+name = "python"
+
+  [analyzers.meta]
+  runtime_version = "3.x.x"
 
 [[analyzers]]
 name = "javascript"
-
-  [analyzers.meta]
-  environment = ["mocha"]
